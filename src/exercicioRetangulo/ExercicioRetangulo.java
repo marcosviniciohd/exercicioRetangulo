@@ -26,16 +26,49 @@ public class ExercicioRetangulo {
 				altura = sc.nextDouble();
 			}
 		
+		System.out.println("*******************************************************************");
+		System.out.println("*******************************************************************");
+		System.out.println("MENU");
+		System.out.println("1 - Mostrar area");
+		System.out.println("2 - Mostrar perimetro");
+		System.out.println("3 - Sair");
+		System.out.print("Digite uma opcao: ");
+		
+		int opcaoMenu = sc.nextInt();
+		
+		while (opcaoMenu <= 0 || opcaoMenu >=4) {
+			
+			System.out.println("OPÇÃO INVALIDA");
+			System.out.println("*******************************************************************");
+			System.out.println("*******************************************************************");
+			System.out.println("MENU");
+			System.out.println("1 - Mostrar area");
+			System.out.println("2 - Mostrar perimetro");
+			System.out.println("3 - Sair");
+			System.out.print("Digite uma opcao: ");
+			opcaoMenu = sc.nextInt();
+					
+		}
+		
+		if (opcaoMenu == 1 ) {
+			double area = largura * altura;
+			System.out.printf("AREA = %.1f%n ", area);
+			
+		}
+		if (opcaoMenu == 2 ) {
+			double perimetro = ( largura + altura ) * 2 ;
+			System.out.println("");
+			System.out.printf("PERIMETRO = %.1f%n ", perimetro);
+			
+		}
+		if (opcaoMenu == 3) {
+			System.out.println("FIM DO PROGRAMA!");
+		}
+		
+
 		sc.close();
 		
 		
 	}
 
 }
-
-
-/*	Ler os dados de um retangulo (Altura e Largura)
- * 
- * 
- * 
- * */
